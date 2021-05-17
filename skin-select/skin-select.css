@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
+/* SKIN SELECT */
+#skin-select h3, #skin-select h4 { font-family: 'Lato', sans-serif; } 
+#skin-select { position:fixed; top:60px; width:290px; z-index:9000; background:#fff; 
+  -webkit-box-shadow: 0px 2px 2px 0px #050505;
+          box-shadow: 2px 2px 2px 0px rgba(0,0,0,.1);
+}
+#skin-select #toggle { position:absolute; top:0; right:-40px; display:block; width:40px; height:40px; cursor:pointer; background: #222 url(img/style-toggle.png) 0 0 no-repeat; }
+#skin-select #toggle.active { background-position:0 -40px; } 
+#skin-select ul { margin:0; padding:0; list-style:none; }
+#skin-select ul li { display:inline-block; margin-right:1px; margin-bottom:4px; }
+#skin-select ul li a { padding: 4px 6px; font-family:Tahoma, "Times New Roman", Times, serif; font-size:11px; text-shadow:none; color:#000; background:#eee; border:1px solid rgba(0,0,0,.2) }
+#skin-select ul li a.active, #skin-select ul li a.active:hover { background-color:#fff; outline:2px solid #000; border-color:transparent; }
+#skin-select ul li a:hover { text-decoration:none; background:#e3e3e3; } 
+
+#skin-select .colors li { margin-bottom:0; }
+#skin-select .colors a { display:block; width:4px; height:6px; line-height:100%; border:1px solid rgba(0,0,0,.2); }
+#skin-select .colors a:hover { outline:2px solid #ccc; }
+
+.skin-part { padding:12px 15px; }
+.skin-part h3 { color:#000; text-shadow:none; margin-bottom:10px; }
+.skin-part h3 small { margin-left:6px; color:#999; }
+.skin-part h4 { font-size:1em; margin:4px 0; }
+
+
+@media screen and (max-height: 800px) {
+	#skin-select { top: 0px; }
+}
+@media screen and (max-width: 767px) {
+	#skin-select { display:none; }
+}
